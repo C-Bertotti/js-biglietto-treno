@@ -7,10 +7,15 @@ va applicato uno sconto del 40% per gli over 65 */
 //Chiedo numero di chilometri
 var km = parseInt(prompt("Quanti chilometri devi percorrere?"));
 
-//Verifico che il valore inserito sia un numero
+//Verifico che il valore inserito sia un numero 1
 if ( isNaN (km) ) {
     km = parseInt(prompt("ATTENTO! Devi inserire una cifra! Riprova."));
-}
+} 
+//Verifico che il valore inserito sia un numero 2
+if ( isNaN (km) ) {
+    alert("Impara a leggere, poi ricarica la pagina.")
+}  
+
 //Chiedo quanti anni ha il passeggero
 var age = parseInt(prompt("Quanti anni hai?"));
 
