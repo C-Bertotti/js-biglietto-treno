@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202529;    
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: #32383D;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+    padding: 60px 40px;
+}
+
+/* typo */
+h1 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #A1B4C4;
+}
+p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+/* /typo */
