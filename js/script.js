@@ -13,11 +13,20 @@ if ( isNaN (km) ) {
 } 
 //Verifico che il valore inserito sia un numero 2
 if ( isNaN (km) ) {
-    alert("Impara a leggere, poi ricarica la pagina.")
+    alert("Impara a leggere, poi ricarica la pagina.");
 }  
 
 //Chiedo quanti anni ha il passeggero
 var age = parseInt(prompt("Quanti anni hai?"));
+
+//Verifico che il valore inserito sia un numero 1
+if ( isNaN (age) ) {
+    age = parseInt(prompt("ATTENTO! Devi inserire una cifra! Riprova."));
+} 
+//Verifico che il valore inserito sia un numero 2
+if ( isNaN (age) ) {
+    alert("Chiedi a qualcuno la tua età, poi ricarica la pagina.");
+}  
 
 //Calcolo costo biglietto
 if (age < 18) {
