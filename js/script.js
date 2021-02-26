@@ -9,3 +9,13 @@ var km = parseInt(prompt("Quanti chilometri devi percorrere?"));
 
 //Chiedo quanti anni ha il passeggero
 var age = parseInt(prompt("Quanti anni hai?"));
+
+//Calcolo costo biglietto
+if (age < 18) {
+    document .getElementById ('answer') .innerHTML = "Il costo del tuo biglietto è di " + ((km * 0.21) * 0.2) + " euro.";
+} else if (age >= 65) {
+    document .getElementById ('answer') .innerHTML = "Il costo del tuo biglietto è di " + ((km * 0.21) * 0.4) + " euro.";
+} else {
+    document .getElementById ('answer') .innerHTML = "Il costo del tuo biglietto è di " + (km * 0.21) + " euro.";
+}
+

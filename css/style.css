@@ -20,6 +20,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     border-radius: 10px;
     padding: 60px 40px;
+    text-align: center;
 }
 
 /* typo */
@@ -27,6 +28,7 @@ h1 {
     font-weight: 600;
     font-size: 30px;
     color: #A1B4C4;
+    margin-bottom: 20px;
 }
 p {
     font-size: 20px;
