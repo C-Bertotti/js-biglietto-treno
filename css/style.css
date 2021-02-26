@@ -20,7 +20,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     border-radius: 10px;
     padding: 60px 40px;
-    text-align: center;
 }
 
 /* typo */
@@ -29,10 +28,24 @@ h1 {
     font-size: 30px;
     color: #A1B4C4;
     margin-bottom: 20px;
+    text-align: center;
 }
 p {
     font-size: 20px;
     color: #fff;
     font-weight: 300;
+    margin-bottom: 10px;
 }
 /* /typo */
+hr {
+    border: 1px solid #fff;
+}
+hr + p,
+hr {
+    margin-top: 40px;
+}
+
+#answer__cost {
+    font-size: 25px;
+    font-weight: 600;
+}

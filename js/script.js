@@ -16,6 +16,8 @@ if ( isNaN (km) ) {
     alert("Impara a leggere, poi ricarica la pagina.");
 }  
 
+document .getElementById('answer__km') .innerHTML = "Devi percorrere " + (km) + " km."
+
 //Chiedo quanti anni ha il passeggero
 var age = parseInt(prompt("Quanti anni hai?"));
 
@@ -28,12 +30,23 @@ if ( isNaN (age) ) {
     alert("Chiedi a qualcuno la tua età, poi ricarica la pagina.");
 }  
 
+document .getElementById('answer__age') .innerHTML = "Hai dichiarato di avere " + (age) + " anni."
+
 //Calcolo costo biglietto
+var standardTicket = (km) * 0.21;
+var ticketChildren = (standardTicket) * 0.8;
+var ticketOlder = (standardTicket) * 0.6;
+
+
 if (age < 18) {
-    document .getElementById ('answer') .innerHTML = "Il costo del tuo biglietto è di " + ((km * 0.21) * 0.2) + " euro.";
+    document .getElementById ('answer__sale') .innerHTML = "Essendo minorenne hai diritto ad uno sconto di " + ((standardTicket) * 0.2) + " euro.";
+
+    document .getElementById ('answer__cost') .innerHTML = (ticketChildren) + " euro.";
 } else if (age >= 65) {
-    document .getElementById ('answer') .innerHTML = "Il costo del tuo biglietto è di " + ((km * 0.21) * 0.4) + " euro.";
+    document .getElementById ('answer__sale') .innerHTML = "Avendo più di 65 anni, hai diritto ad uno sconto di " + ((standardTicket) * 0.4) + " euro.";
+
+    document .getElementById ('answer__cost') .innerHTML = (ticketOlder) + " euro.";
 } else {
-    document .getElementById ('answer') .innerHTML = "Il costo del tuo biglietto è di " + (km * 0.21) + " euro.";
+    document .getElementById ('answer__cost') .innerHTML = (standardTicket) + " euro.";
 }
 
